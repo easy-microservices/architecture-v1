@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  product-catalog-db:
+    image: mongo
+    container_name: archv1-pc-db
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: product-catalog-database
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+    volumes:
+      - ./scripts/setup_database.js:/docker-entrypoint-initdb.d/setup_database.js:ro
+

@@ -1,0 +1,19 @@
+# Mac OS X files
+.DS_Store
+
+# IntelliJ IDEA project files
+.idea
+*.iml
+
+# Visual Studio 
+.vscode/
+
+# Binaries for programs and plugins
+*.exe
+*.so
+
+# Test binary, built with `go test -c`
+*.test
+
+# Vendor Dependenvies for local deployment
+vendor/
